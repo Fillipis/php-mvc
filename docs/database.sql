@@ -39,3 +39,18 @@ CREATE TABLE funcionario (
     foreign key fk_empresa (empresa_id) references empresa (id),
     foreign key fk_cargo (cargo_id) references cargo (id)
 );
+
+CREATE TABLE usuario (
+    id int auto_increment not null,
+    email varchar(255) not null,
+    nome varchar(255) not null,
+    senha varchar(255) not null,
+    data_criacao date not null,
+    hora_criacao varchar(8) not null,
+    data_acesso date,
+    hora_acesso varchar(8),
+    situacao int(1) default 1 comment "[1][ativa]; [0][inativa]",
+    primary key pk_usuario (id)
+);
+
+INSERT INTO usuario (email, nome, senha, data_criacao, hora_criacao) VALUES ('seu@mail', 'Seu Nome', md5('senha123'), '2022-12-12', '00:00:00');
