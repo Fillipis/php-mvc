@@ -1,3 +1,6 @@
+<?php
+    include_once('config/database.php');
+?>
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -7,9 +10,9 @@
     <meta name="description" content="Um simples html para novos projetos.">
     <meta name="author" content="@fillipidev">
     <script src="js/font-awesome.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="/favicon.ico">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- <link rel="icon" href="/favicon.ico"> -->
+    <!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml"> -->
+    <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -20,11 +23,7 @@
         }
     </style>
     <header class="header">
-        <h2>Importando Fontes - Que a força esteja com você</h2>
-        <div class="icones">
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-regular fa-user"></i>
-        </div>
+        <h2>Hello world!</h2>
     </header>
 </body>
 </html>
