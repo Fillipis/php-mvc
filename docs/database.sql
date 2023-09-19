@@ -8,12 +8,20 @@ USE php_mvc;
 
 CREATE TABLE empresa (
     id int auto_increment not null,
+    email varchar(255) not null,
     cnpj varchar(40) not null,
     nome varchar(255) not null,
     razao varchar(255) not null,
+    cep varchar(10) not null,
     endereco varchar(255) not null,
-    telefone varchar(40) not null,
-    email varchar(255) not null,
+    bairro varchar(255) not null,
+    numero varchar(25) not null,
+    cidade varchar(255) not null,
+    uf varchar(2) not null,
+    pais varchar(255) not null,
+    telefone varchar(20),
+    whatsapp varchar(20),
+    telegram varchar(20),
     situacao int(1) not null default 1 comment "[1][ativa]; [0][inativa]",
     primary key pk_empresa (id)
 );
@@ -21,8 +29,8 @@ CREATE TABLE empresa (
 CREATE TABLE cargo (
     id int auto_increment not null,
     nome varchar(255) not null,
-    nivel int(1) not null comment "[0][trainer]; [1][junior]; [2][pleno]; [3][senior]",
-    descricao_nivel varchar(255) not null,
+    nivel int(1) not null comment "[1][treinir]; [2][junior]; [3][pleno]; [4][senior]; [5][lider]",
+    descricao varchar(255) not null,
     situacao int(1) not null default 1 comment "[1][ativa]; [0][inativa]",
     primary key pk_cargo (id)
 );
