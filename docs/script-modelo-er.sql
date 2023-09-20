@@ -38,7 +38,7 @@ CREATE TABLE usuario (
     foreign key fk_perfil_usuario_id (perfil_usuario_id) references perfil_usuario (id)
 );
 
-INSERT INTO usuario (email, cpf, nome, senha, data_criacao) VALUES ('123.123.123-40', 'naminhabio@mail', 'Naminhabio', md5('senha123'), now());
+INSERT INTO usuario (email, cpf, nome, senha, data_criacao) VALUES ('123.123.123-40', 'seu_email@mail', 'Seu Nome', md5('senha321'), now());
 
 CREATE TABLE empresa (
     id int auto_increment not null,
