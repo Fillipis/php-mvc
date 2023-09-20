@@ -1,6 +1,11 @@
-# php-mvc
-# mvc na unha em 3 passos:
+# PHP com MVC
 
-1. Modelo ER mysql;
-2. Conexão com base a base de dados mysql;
-3. Model, view e controller.
+Atualmente esse projeto visa criar uma estrura MVC com implementação de Interfaces via composer (PSR-4) autoload e comunicação com uma base de dados MySQL via PDO.
+
+# Modelo Entidade Relacionamento (MER) em MySQL:
+
+https://github.com/Fillipis/php-mvc/blob/main/docs/script-modelo-er.sql
+
+# DUMP em MySQL:
+
+https://github.com/Fillipis/php-mvc/blob/main/dump/dump-modelo-er.sql
