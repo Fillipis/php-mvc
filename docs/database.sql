@@ -35,10 +35,10 @@ CREATE TABLE usuario (
     exclusao int(1) default 0 comment "[1][exclusao-logica]; [0][nao-excluido]",
     data_exclusao datetime,
     primary key pk_usuario (id),
-    foreign key fk_perfil_usuario_id (perfil_usuario_id) references perfil_usuario (id),
+    foreign key fk_perfil_usuario_id (perfil_usuario_id) references perfil_usuario (id)
 );
 
-INSERT INTO usuario (email, nome, senha, data_criacao) VALUES ('seu@mail', 'Seu Nome', md5('senha123'), now());
+INSERT INTO usuario (email, cpf, nome, senha, data_criacao) VALUES ('123.123.123-40', 'naminhabio@mail', 'Naminhabio', md5('senha123'), now());
 
 CREATE TABLE empresa (
     id int auto_increment not null,
