@@ -150,7 +150,7 @@ CREATE TABLE `usuario` (
 --
 
 LOCK TABLES `usuario` WRITE;
-INSERT INTO `usuario` VALUES (1,2,'naminhabio@mail','123.123.123-40','Naminhabio','e7d80ffeefa212b7c5c55700e4f7193e',1,'2023-09-19 20:59:11',NULL,0,NULL);
+INSERT INTO `usuario` VALUES (1,2,'suemail@mail','123.123.123-40','Seu Nome/Marca','6543210',1,'2023-09-19 20:59:11',NULL,0,NULL);
 UNLOCK TABLES;
 
 --
